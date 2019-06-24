@@ -1,0 +1,13 @@
+version: '3'
+
+services:
+
+  jetty:
+    image: jetty
+    container_name: jetty
+    volumes:
+      - ./resources/Application-1.0.war:/var/lib/jetty/webapps/Application-1.0.war
+    ports:
+      - "9155:8080"
+
+
